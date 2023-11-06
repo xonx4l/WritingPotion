@@ -1,5 +1,6 @@
-import React from "react"
-import Typewriter from 'typewriter-effect'
+"use client";
+import React from "react";
+import Typewriter from 'typewriter-effect';
 type Props = {}
 
 const TypewriterTitle =(props: Props) => {
@@ -9,7 +10,10 @@ const TypewriterTitle =(props: Props) => {
             loop:true,
          }} 
          onInit={(typewriter) => {
-           typewriter.typeString('Supercharged Productivity.') 
+           typewriter.typeString('Supercharged Productivity.')
+           .pauseFor(1000).deleteAll()
+           .typeString("AI-Powered Insights.")
+           .start(); 
          }}
          />
     );

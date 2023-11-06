@@ -1,3 +1,4 @@
+import TypewriterTitle from "@/components/TypewriterTitle";
 import { Button } from "@/components/ui/button";
 
 export default function Home() {
@@ -9,7 +10,7 @@ export default function Home() {
        </h1>
        <div className="mt-4"></div>
        <h2 className="font-semibold text-3xl text-center text-slate-700 ">
-        AI Powered 
+        <TypewriterTitle />
        </h2>
        </div>    
      </div>
