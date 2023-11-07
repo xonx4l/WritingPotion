@@ -1,6 +1,7 @@
 import TypewriterTitle from "@/components/TypewriterTitle";
 import { Button } from "@/components/ui/button";
-import { Link } from "lucide-react";
+import  Link  from "next/link";
+import {ArrowRight} from "lucide-react"
 export default function Home() {
   return (
      <div className="bg-gradient-to-r min-h-screen grainy from rose-100 to teal-10">
@@ -14,9 +15,13 @@ export default function Home() {
        </h2>
        <div className="mt-8"></div>
 
+       <div className="flex justify-center">
        <Link href="/dashboard">
-          <Button className=" bg-green-600">Get started</Button>
+          <Button className=" bg-green-600">Get started
+           <ArrowRight className="ml-2 w-5 h-5" strokeWidth={3}/>
+          </Button>
        </Link>
+       </div>
        </div>    
      </div>
   )
