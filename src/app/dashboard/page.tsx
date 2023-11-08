@@ -2,6 +2,7 @@ import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from 'react'
+import { UserButton } from "@clerk/nextjs";
 
 type Props = {};
 
@@ -19,6 +20,9 @@ const DashboardPage = (props: Props) => {
                             Back</Button>
                     </Link>
                     <div className="w-4"></div>
+                    <h1 className="text-3xl font-bold text-gray-900">My Notes</h1>
+                    <div className="w-4"></div>
+                    <UserButton />
                 </div>
              </div>
           </div>  
