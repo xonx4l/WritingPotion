@@ -1,3 +1,4 @@
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from 'react'
@@ -13,8 +14,11 @@ const DashboardPage = (props: Props) => {
              <div className ="flex justify-between  items-center md:flex-row flex-col">
                 <div className= "flex items-center">
                     <Link href='/'>
-                        <Button>Back</Button>
+                        <Button className="bg-green-600">
+                            <ArrowLeft className="mr-1 w-4 h-4" />
+                            Back</Button>
                     </Link>
+                    <div className="w-4"></div>
                 </div>
              </div>
           </div>  
