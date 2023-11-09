@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from 'react'
 import { UserButton } from "@clerk/nextjs";
+import { Separator } from "@radix-ui/react-separator";
 
 type Props = {};
 
@@ -15,7 +16,7 @@ const DashboardPage = (props: Props) => {
              <div className ="flex justify-between  items-center md:flex-row flex-col">
                 <div className= "flex items-center">
                     <Link href='/'>
-                        <Button className="bg-green-600">
+                        <Button className="bg-green-600" size="sm">
                             <ArrowLeft className="mr-1 w-4 h-4" />
                             Back</Button>
                     </Link>
@@ -24,6 +25,15 @@ const DashboardPage = (props: Props) => {
                     <div className="w-4"></div>
                     <UserButton />
                 </div>
+             </div>
+
+             <div className="h-8"></div>
+             <Separator />
+             <div className="h-8"></div>
+             {/* list all the notes */}
+             {/* TODO conditionally rendered */}
+             <div className="text-center">
+                <h2 className="text-xl text-gray-500">You have no notes yet .</h2>
              </div>
           </div>  
         </div>
