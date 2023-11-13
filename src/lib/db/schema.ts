@@ -8,3 +8,8 @@ export const $notes =pgTable('notes',{
      userId: text('user_id').notNull(),
      editorState: text('editor_state'),
 });
+
+export type NoteType = typeof $notes.$inferInsert;
+
+// drizzle-orm
+// drizzle-kit
